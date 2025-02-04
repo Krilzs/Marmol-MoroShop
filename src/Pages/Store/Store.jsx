@@ -10,12 +10,12 @@ const Store = () => {
     const [price,setPrice] = useState(1000)
     const [category,setCategory] = useState(null)
     const [cartProducts,setCartProducts] = useState([])
-
+    console.log(cartProducts,'cartProducts')
     const handleAddCart = (newproduct) =>{
         setCartProducts((prevCartProducts) => [...prevCartProducts, newproduct])
     }
-    const handleRemoveCart = (removeproduct) =>{ 
-        setCartProducts((prevCartProducts) => prevCartProducts.filter(product => product.id !== removeproduct.id))
+    const handleRemoveCart = (numero) =>{ 
+        setCartProducts((prevCartProducts) => prevCartProducts.filter((product, index) => index !== numero))
     }
 
     const handleFilterChange = (filter) => {

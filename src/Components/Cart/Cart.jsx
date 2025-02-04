@@ -11,7 +11,7 @@ const Cart = ({CartProducts , handleRemoveCart}) => {
             </div>
             <div className={styles.productsContainer}>
                 {
-                    CartProducts.length > 0 ? CartProducts.map(product => (<CartProduct handleRemoveCart={handleRemoveCart} product={product} key={product.id} />)) : <h2 className={styles.emptyCart}>Cart is empty</h2>
+                    CartProducts.length > 0 ? CartProducts.map((product, index) => (<CartProduct handleRemoveCart={handleRemoveCart} product={product} numero={index} />)) : <h2 className={styles.emptyCart}>Cart is empty</h2>
                 }
             </div>
         </div>

@@ -19,9 +19,9 @@ const StoreShop = ( {products, price, category, handleAddCart}) => {
         <>
             <div className={styles.productsContainer}>
                 {
-                    !category ? products.filter(product => product.price <= price).map(product => (
-                        <ProductCard handleAddCart={handleAddCart} product={product} key={product.id} />
-                    )) : products.filter(product => product.category === category && product.price <= price).map(product => (
+                    !category ? products.filter((product) => product.price <= price).map((product) => (
+                        <ProductCard handleAddCart={handleAddCart} product={product} key={product.id}/>
+                    )) : products.filter(product => product.category === category && product.price <= price).map((product) => (
                         <ProductCard handleAddCart={handleAddCart} product={product} key={product.id} />
                     ))
                 }

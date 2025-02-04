@@ -16,29 +16,25 @@ function App() {
             <img src="./src/assets/logo.png" alt="" />
           </div>
         </div>
-        
         <div className={styles.homeContainer}>
-      <div className={styles.section}>
-        <h2>About Us</h2>
-        <p>At Mármol & Moro, we are committed to offering high-quality products at the best prices. Our goal is to provide an exceptional shopping experience in a modern and welcoming environment.</p>
-      </div>
-
-      <div className={styles.section}>
-        <h2>Why Choose Us?</h2>
-        <ul>
-          <li>Wide selection of top-quality products</li>
-          <li>Competitive prices that fit your budget</li>
-          <li>Friendly and personalized customer service</li>
-          <li>Online shopping with fast delivery options</li>
-        </ul>
-      </div>
-
-      <div className={styles.section}>
-        <h2>Our Values</h2>
-        <p>We believe in quality, innovation, and sustainability. We work closely with local suppliers to support our community and offer fresh and eco-friendly products.</p>
-      </div>
-    </div>
-
+          <div className={styles.section}>
+            <h2>About Us</h2>
+            <p>At Mármol & Moro, we are committed to offering high-quality products at the best prices. Our goal is to provide an exceptional shopping experience in a modern and welcoming environment.</p>
+          </div>
+          <div className={styles.section}>
+            <h2>Why Choose Us?</h2>
+            <ul>
+              <li>Wide selection of top-quality products</li>
+              <li>Competitive prices that fit your budget</li>
+              <li>Friendly and personalized customer service</li>
+              <li>Online shopping with fast delivery options</li>
+            </ul>
+          </div>
+          <div className={styles.section}>
+            <h2>Our Values</h2>
+            <p>We believe in quality, innovation, and sustainability. We work closely with local suppliers to support our community and offer fresh and eco-friendly products.</p>
+          </div>
+        </div>
       </article>
     </>
   )
