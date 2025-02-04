@@ -1,0 +1,42 @@
+.productFilter{
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    height: fit-content;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.priceLabel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceLabel p{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filterSpan{
+    height: fit-content;
+    border-bottom: 1px solid #72727289;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filterSpan p{
+    font-weight: lighter;
+}
+
