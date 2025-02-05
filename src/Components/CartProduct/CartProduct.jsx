@@ -13,11 +13,11 @@ const CartProduct = ({product, handleRemoveCart,numero}) => {
             <div className={styles.textContainer}>
                 <span><h2>{product.title}</h2></span>
                 <div className={styles.priceContainer}>
-                    <p>${product.price}</p>
-                    <button onClick={handleRemove}>Remove</button>
+                    <p className={styles.price}>${(product.price * product.count).toFixed(2)}</p>
+                    <p className={styles.quantity}>{product.count}</p>
                 </div>
-                
             </div>
+            <button className={styles.removeButton} onClick={handleRemove}>Remove</button>
         </div>
     )
 }

@@ -26,7 +26,7 @@ const ProductFilter = ({handleFilterChange}) => {
             <form action="" onSubmit={handleSubmit} >
                 <span className={styles.filterSpan}>
                 <label htmlFor="category">Category</label>
-                <select name="category" onChange={handleCategoryPrice} id="category">
+                <select className={styles.select} name="category" onChange={handleCategoryPrice} id="category">
                     <option value="all">All</option>
                     <option value="electronics">Electronics</option>
                     <option value="jewelery">Jewelery</option>
@@ -39,7 +39,7 @@ const ProductFilter = ({handleFilterChange}) => {
                 <input type="range" onChange={handleFilterPrice} name="price" id="price" min="0" max="1000" step="1" />
                 <label className={styles.priceLabel} htmlFor="price"><p>Min.</p><p>Max.</p></label>
                 </span>
-                <button>Add Filters</button>
+                <button type="submit" className={styles.button}>Add Filters</button>
             </form>
         </div>
     )

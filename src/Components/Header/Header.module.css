@@ -41,6 +41,9 @@
     transition: all 0.1s ease-in-out;
 }
 
+.burgerButton{
+    display: none;
+}
 
 
 
@@ -81,4 +84,100 @@
 
 .header li:active{
     transform: scale(0.9);
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+        flex-direction: column;
+        height: fit-content;
+        padding: 0;
+        min-height: 70px;
+    }
+
+    .headerContainer{
+        padding: 0 10px;
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        outline: solid 1px #72727289;
+    }
+    
+    .header nav{
+        display: none;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        background-color:#0b6e95;
+    }
+
+    .active {
+        display: flex !important;
+    }
+
+    .header ul{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .header li{
+        width: 100%;
+        height: 35px;
+        display: flex;
+        align-items : center;
+        justify-content: start;
+        text-align: start;
+        border-radius: 0px;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .header a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        text-align: start;
+    }
+
+    .burgerButton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: fit-content;
+        height: 20px;
+        border: none;
+        background-color:transparent;
+        color: white;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .burgerLine{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+    }
+
+    .cartButton{
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        align-items: center;
+        justify-content: start;
+        border-radius: 0px;
+        text-align: start;
+        padding: 0;
+    }
+
 }

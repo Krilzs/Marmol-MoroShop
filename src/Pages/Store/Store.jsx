@@ -10,16 +10,25 @@ const Store = () => {
     const [price,setPrice] = useState(1000)
     const [category,setCategory] = useState(null)
     const [cartProducts,setCartProducts] = useState([])
-    console.log(cartProducts,'cartProducts')
-    const handleAddCart = (newproduct) =>{
-        setCartProducts((prevCartProducts) => [...prevCartProducts, newproduct])
-    }
+    const handleAddCart = (newproduct, count) =>{
+        if (cartProducts.find(product => product.id === newproduct.id)) {
+            setCartProducts((prevCartProducts) => prevCartProducts.map((product) => {
+                if (product.id === newproduct.id) {
+                    let newCount = parseInt(product.count) + parseInt(count)
+                    return {...product, count: newCount}
+                }
+                return product;
+            }))
+        } else {
+            setCartProducts((prevCartProducts) => [...prevCartProducts, {...newproduct, count: count}])
+        }
+        }
+
     const handleRemoveCart = (numero) =>{ 
         setCartProducts((prevCartProducts) => prevCartProducts.filter((product, index) => index !== numero))
     }
 
     const handleFilterChange = (filter) => {
-        debugger
         setPrice(filter.price)
         setCategory(filter.category)
     }

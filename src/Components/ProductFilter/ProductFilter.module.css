@@ -2,7 +2,7 @@
     margin: 20px;
     border-radius: 5px;
     display: flex;
-    width: 300px;
+    min-width: 400px;
     flex-direction: column;
     height: fit-content;
     gap: 20px;
@@ -30,7 +30,6 @@ form{
 
 .filterSpan{
     height: fit-content;
-    border-bottom: 1px solid #72727289;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -40,3 +39,47 @@ form{
     font-weight: lighter;
 }
 
+.button{
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #008bc2;
+    border: none;
+    width: fit-content;
+    color: white;
+}
+
+.button:focus{
+    outline: none;
+}
+
+.button:hover{
+    background-color: #008bc2;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .productFilter{
+        min-width: 90vw;
+    }
+
+.select{
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #008bc2;
+}
+
+.select:focus{
+    outline: none;
+}
+
+.select option{
+    padding: 5px;
+}
+
+
+
+}
