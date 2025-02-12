@@ -8,8 +8,7 @@ const Header = ({CartProducts , handleRemoveCart, inHomePage}) => {
 
     const handleOpenCart = () => {
         setOpenCart(!openCart)
-    }
-
+    }      
 
     return (
         <header className={styles.header}>
@@ -27,7 +26,7 @@ const Header = ({CartProducts , handleRemoveCart, inHomePage}) => {
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/store">Store</Link></li>
-                        {inHomePage ? null : <li><button className={styles.cartButton} onClick={handleOpenCart}>{openCart ? "Close Cart" : "Open Cart"}</button></li>}
+                        {inHomePage ? null : <button className={styles.cartButton} onClick={handleOpenCart}>{openCart ? "Close Cart" : "Open Cart"}</button>}
                     </ul>
                 </nav>
                 

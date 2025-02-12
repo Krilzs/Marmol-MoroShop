@@ -1,27 +1,48 @@
 .header{
-    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     width: 100%;
-    background-color: #00b7ff;
-    color: white;
-    display: flex;
-    justify-content: space-between;
     height: 70px;
-    padding: 0 20px;
+    display: flex;
+    background-color: #111;
+    width: 100%;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 25px 20px;
 }
 
-.header h1{
+.headerStore{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #111;
+    width: 100%;
+    color: black;
+    justify-content: space-between;
+    align-items: start;
+    height: 100px;
+    padding: 25px 20px;
+}
+
+.header h1, .headerStore h1{
     display: flex;
     align-items: center;
+    color: white;
     height: 100%;
 }
 
-.header nav{
+.header nav, .headerStore nav{
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.header ul{    
+.header ul, .headerStore ul{ 
     list-style: none;
     display: flex;
     gap: 10px;
@@ -30,12 +51,14 @@
     padding: 10px;
 }
 
-.header li{
+.header li, .headerStore li{
     border-radius: 5px;
-    background-color: #008bc2;
+    background-color: #32373976;
+
     width: 100px;
     height: 100%;
     display: flex;
+    padding: 10px;
     align-items : center;
     justify-content: center;
     transition: all 0.1s ease-in-out;
@@ -47,7 +70,7 @@
 
 
 
-.header a{
+.header a, .headerStore a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,11 +81,11 @@
 }
 
 .cartButton{
-    width: 100%;
-    border: none;
-    background-color: #008bc2;
-    height: 100%;
+    width: fit-content;
     padding: 10px;
+    border: none;
+    background-color: #32373976;
+    height: 100%;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -79,7 +102,7 @@
 }
 
 .header li:hover{
-    background-color: #0b6e95;
+    background-color: #00000071;
 }
 
 .header li:active{

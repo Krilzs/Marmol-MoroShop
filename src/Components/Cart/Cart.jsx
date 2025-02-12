@@ -1,14 +1,13 @@
 import styles from "./Cart.module.css"
 import CartProduct from "../CartProduct/CartProduct"
 
-const Cart = ({CartProducts , handleRemoveCart, handleCart}) => {
+const Cart = ({CartProducts , handleRemoveCart}) => {
     
     return (
         <div className={styles.cartContainer}>
             <div className={styles.cartHeader}>
                 <h2>Your Cart</h2>
                 <p>Total: ${CartProducts.reduce((acc, product) => acc + (product.price * product.count), 0).toFixed(2)}</p>
-                <button className={styles.closeButton} onClick={handleCart}>Close</button>  
             </div>
             <div className={styles.productsContainer}>
                 {
