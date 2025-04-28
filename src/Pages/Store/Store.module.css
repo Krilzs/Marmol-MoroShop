@@ -1,7 +1,5 @@
 .storeContainer{
-    display: flex;
-    outline: solid red;
-    
+    display: flex;   
 }
 
 @media screen and (max-width: 1000px) {
