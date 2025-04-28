@@ -1,9 +1,8 @@
 import React from 'react'
 import Header from './Components/Header/Header'
 import styles from './App.module.css'
-import Marmol from './assets/owners1.jpg'
-import Moro from './assets/owner2.jpg'
-import Hero from './assets/hero.jpg'
+import Marmol from './Assets/owners1.jpg'
+import Moro from './Assets/owner2.jpg'
 import { Link } from "react-router-dom"
 
 function App() {
